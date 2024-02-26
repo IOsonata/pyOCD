@@ -583,7 +583,7 @@ class NRF91(CoreSightTarget):
 
         LOG.info(f"This appears to be an nRF{partno:X} " +
                  f"{word_to_bytes(variant).decode('ASCII', errors='ignore')} " +
-         	 f"{word_to_bytes(hwrevision).decode('ASCII', errors='ignore')}")
+             f"{word_to_bytes(hwrevision).decode('ASCII', errors='ignore')}")
 
     def write_uicr(self, addr: int, value: int):
         current_value = self.read32(addr)
